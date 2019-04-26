@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmileWpf"
         mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Icon="Images/Logo/logo-small.png"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="Welcome to WPF!" />
+        <TextBlock Text="Welcome to WPF!" 
+                   FontSize="40" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" />
     </Grid>
 </Window>
