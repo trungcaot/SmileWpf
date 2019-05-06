@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen"
         x:Name="AppWindow"
         Icon="Images/Logo/logo-small.png"
-        Title="Welcome, friend!" Height="450" Width="800">
+        Title="Welcome, friend!" Height="600" Width="900">
     <Window.Resources>
         <Style TargetType="{x:Type local:MainWindow}">
             <Setter Property="Template">
@@ -113,6 +113,7 @@
             />
     </WindowChrome.WindowChrome>
     
-    <Grid Background="Blue">
+    <Grid Background="{StaticResource ForegroundLightBrush}">
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" />
     </Grid>
 </Window>
